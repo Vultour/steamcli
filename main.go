@@ -138,7 +138,7 @@ func cacheGamesPrint(a *Arguments) {
 	for _, g := range games {
 		fmt.Printf(
 			"%-8s: %-32s : %v\n",
-			strconv.Itoa(g.AppID), g.Name, g.Categories,
+			strconv.Itoa(g.AppID), g.Name, strings.Join(g.CategoriesStrings(), ", "),
 		)
 	}
 }
