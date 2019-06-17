@@ -6,10 +6,11 @@ import (
 	"io"
 	"net/http"
 	"net/url"
-	"steamcli/api/endpoints"
-	"steamcli/objects"
 	"strconv"
 	"time"
+
+	"gitlab.com/vultour/steamcli/api/endpoints"
+	"gitlab.com/vultour/steamcli/objects"
 
 	log "github.com/sirupsen/logrus"
 )

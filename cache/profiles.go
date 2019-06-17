@@ -1,10 +1,11 @@
 package cache
 
 import (
-	"steamcli/objects"
 	"strconv"
 	"strings"
 	"time"
+
+	"gitlab.com/vultour/steamcli/objects"
 
 	log "github.com/sirupsen/logrus"
 )

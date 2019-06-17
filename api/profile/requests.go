@@ -3,9 +3,10 @@ package profile
 import (
 	"encoding/xml"
 	"io"
-	"steamcli/api/endpoints"
-	"steamcli/objects"
 	"strings"
+
+	"gitlab.com/vultour/steamcli/api/endpoints"
+	"gitlab.com/vultour/steamcli/objects"
 
 	log "github.com/sirupsen/logrus"
 )

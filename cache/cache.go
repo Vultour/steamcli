@@ -6,8 +6,9 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
-	"steamcli/objects"
 	"time"
+
+	"gitlab.com/vultour/steamcli/objects"
 
 	log "github.com/sirupsen/logrus"
 )

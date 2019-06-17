@@ -3,8 +3,9 @@ package aggregator
 
 import (
 	"fmt"
-	"steamcli/api/profile"
-	"steamcli/cache"
+
+	"gitlab.com/vultour/steamcli/api/profile"
+	"gitlab.com/vultour/steamcli/cache"
 
 	log "github.com/sirupsen/logrus"
 )

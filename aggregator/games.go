@@ -7,15 +7,15 @@ import (
 	"net/http"
 	"net/http/cookiejar"
 	"net/url"
-	"steamcli/objects"
 	"strconv"
 	"strings"
 	"time"
 
-	"golang.org/x/net/html/atom"
+	"gitlab.com/vultour/steamcli/objects"
 
 	log "github.com/sirupsen/logrus"
 	"golang.org/x/net/html"
+	"golang.org/x/net/html/atom"
 )
 
 type gameMatcher []*map[int]struct{}

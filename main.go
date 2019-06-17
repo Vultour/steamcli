@@ -3,10 +3,11 @@ package main
 import (
 	"fmt"
 	"os"
-	"steamcli/aggregator"
-	"steamcli/cache"
 	"strconv"
 	"strings"
+
+	"gitlab.com/vultour/steamcli/aggregator"
+	"gitlab.com/vultour/steamcli/cache"
 
 	log "github.com/sirupsen/logrus"
 )
