@@ -1,3 +1,4 @@
+// Package cache implements caching structures for various Steam objects
 package cache
 
 import (

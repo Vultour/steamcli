@@ -1,3 +1,4 @@
+// Package id provides a simple way to handle and convert various types of Steam IDs
 package id
 
 import (
