@@ -37,8 +37,8 @@ Arguments:
 - Data is cached, games have an expiration of 30 days, profiles 12 hours. See `cache/cache.go`.
 - Running with `--fetch-tags` will also retrieve tags for the rest of the games in the cache, not just newly fetched ones.
 - `--cache-parallel` can be used to increase the number of games fetched per request from the API. Steam seems to have disabled this functionality so requesting more than one game at a time returns `null`.
-- Steam IDs can be specified in three forms: `STEAM_X:Y:Z`, 64bit Steam ID, or a community id (the custom URL nickname, not _any_ name)
-- The 'categories' printed after the game name aren't tags, they're the official Steam categories (e.g. "Multi-Player", "Steam Workshop", "In-App Purchases")
+- Steam IDs can be specified in three forms: `STEAM_X:Y:Z`, 64bit Steam ID, or a community id (the custom URL nickname, not _any_ name).
+- The 'categories' printed after the game name aren't tags, they're the official Steam categories (e.g. "Multi-Player", "Steam Workshop", "In-App Purchases").
 
 ### Examples
 #### Get all games in an account
@@ -72,9 +72,9 @@ $ ./steamcli games --id 76561198016990736 --tag arcade
 #### Show common games across two accounts
 > Hint: All the previous modifiers still work, e.g. `--tag`, `--and`, or `--tags-only`.
 
-> Hint 2: You can see all games across both accounts by dropping `--common`
+> Hint 2: You can see all games across both accounts by dropping `--common`.
 
-> Hint 3: `--id` can be used as many times as needed, not just twice
+> Hint 3: `--id` can be used as many times as needed, not just twice.
 ```
 $ ./steamcli games --id 76561198016990736 --id 76561198076575909 --common
 295110  : Just Survive                             : Multi-player, MMO, Steam Trading Cards
