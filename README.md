@@ -84,5 +84,31 @@ $ ./steamcli games --id 76561198016990736 --id 76561198076575909 --common
 362300  : Just Survive Test Server                 : Single-player, Multi-player, MMO
 ```
 
+### Other Functionality
+#### Cache management
+Remove cached games that are marked as invalid or don't have any tags associated with them.
+```
+$ ./steamcli cache games purge-invalid
+Purged 11 invalid games from cache
+
+$ ./steamcli cache games purge-missing-tags
+Purged 3 games with missing tags from cache
+```
+
+#### Cache inspection
+```
+$ ./steamcli cache games info
+=== Game Cache Information ===
+Total games: 81
+Unique tags: 195
+```
+
+`cache print` works just like the main `games` command, but on the whole cache instead of individual accounts.
+```
+$ ./steamcli cache games print --tag blood
+208090  : Loadout                          : Multi-player, Co-op, Steam Achievements, Steam Trading Cards, Partial Controller Support, Steam Cloud, Valve Anti-Cheat enabled
+273300  : Outlast: Whistleblower DLC       : Single-player, Downloadable Content, Steam Achievements, Full controller support, Captions available, Steam Cloud
+```
+
 ## Library "documentation"
 [![GoDoc](https://godoc.org/github.com/Vultour/steamcli?status.svg)](https://godoc.org/github.com/Vultour/steamcli)
