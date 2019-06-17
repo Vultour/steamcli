@@ -122,8 +122,8 @@ func cacheGamesInfo(a *Arguments) {
 	c := cache.New()
 
 	fmt.Println("=== Game Cache Information ===")
-	fmt.Printf("Total games: %d", len(c.Games))
-	fmt.Printf("Unique tags: %d", len(c.Games.AllTags()))
+	fmt.Printf("Total games: %d\n", len(c.Games))
+	fmt.Printf("Unique tags: %d\n", len(c.Games.AllTags()))
 }
 
 func cacheGamesPrint(a *Arguments) {
